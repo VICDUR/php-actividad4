@@ -39,7 +39,7 @@
                 <h4>Hecho por los estudiantes:</h4>
                 <ul>
                     <li class="n-estudiante">Víctor Alfonso Dúran B</li>
-                    <li class="n-estudiante">Julian Vera Godoi</li>
+                    <li class="n-estudiante">Julian David Vera Godoy</li>
                  </ul>
             </div>
             
