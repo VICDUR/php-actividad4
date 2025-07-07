@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* contenido centrado */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #d0e8f2);
+  padding: 40px 20px;
+}
+
+/* Título pixelado y grande */
+/* Título pixelado y separado del contenedor */
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  padding-bottom: 20px;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 60px; /* ← Aumentamos el espacio */
+  color: #333;
+}
+
+
+/* Contenedor responsivo */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 280px;
+  text-align: center;
+}
+
+/* Enlaces dentro de tarjetas */
+.card a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+}
+
+/* Hover sobre la tarjeta */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Al hacer clic */
+.card:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover en enlaces */
+.card a:hover {
+  color: #ff6f61;
+}
+
+/* Enlaces visitados */
+.card a:visited {
+  text-decoration: none;
+  color: #8e44ad;
+}
+
+/* Adaptación en pantallas pequeñas */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px 40px;
+  position: relative;
+  margin-top: 60px;
+  font-size: 14px;
+  flex-wrap: wrap;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Docente */
+.presentado h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* Estilo del nombre */
+.docente {
+  color: #e91e63;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Lista horizontal sin puntos */
+.estudiantes ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.estudiantes li {
+  font-weight: bold;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.estudiantes li:hover {
+  color: #007acc;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .estudiantes ul {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .presentado h3 {
+    font-size: 14px;
+  }
+}
